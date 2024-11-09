@@ -27,19 +27,33 @@ Automata::Automata()
     delta[1]['e'] = 5;
     delta[1]['E'] = 6;
 
-    delta[2]['0'] = 2;
-    delta[2]['1'] = 2;
-    delta[2]['2'] = 2;
-    delta[2]['3'] = 2;
-    delta[2]['4'] = 2;
-    delta[2]['5'] = 2;
-    delta[2]['6'] = 2;
-    delta[2]['7'] = 2;
-    delta[2]['8'] = 2;
-    delta[2]['9'] = 2;
+    delta[2]['0'] = 3;
+    delta[2]['1'] = 3;
+    delta[2]['2'] = 3;
+    delta[2]['3'] = 3;
+    delta[2]['4'] = 3;
+    delta[2]['5'] = 3;
+    delta[2]['6'] = 3;
+    delta[2]['7'] = 3;
+    delta[2]['8'] = 3;
+    delta[2]['9'] = 3;
     delta[2]['.'] = 4;
     delta[2]['e'] = 5;
     delta[2]['E'] = 6;
+
+    delta[3]['0'] = 3;
+    delta[3]['1'] = 3;
+    delta[3]['2'] = 3;
+    delta[3]['3'] = 3;
+    delta[3]['4'] = 3;
+    delta[3]['5'] = 3;
+    delta[3]['6'] = 3;
+    delta[3]['7'] = 3;
+    delta[3]['8'] = 3;
+    delta[3]['9'] = 3;
+    delta[3]['.'] = 4;
+    delta[3]['e'] = 5;
+    delta[3]['E'] = 6;
 
     delta[4]['0'] = 7;
     delta[4]['1'] = 7;
@@ -124,14 +138,11 @@ Automata::Automata()
     delta[10]['8'] = 8;
     delta[10]['9'] = 8;
 
-    delta[11]['e'] = 5;
-    delta[11]['E'] = 6;
-
     F.insert(1);
     F.insert(2);
+    F.insert(3);
     F.insert(7);
     F.insert(8);
-    F.insert(11);
 }
 
 Automata::~Automata(){}
