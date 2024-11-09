@@ -76,7 +76,7 @@ void print(lang l){
 lang generate(int n, int m, char alpha, char beta){
     lang l;
     if (m < 1){
-        l.insert("");
+        //l.insert("");
         return l;
     }
     for (int i = 0; i < m; i++)
@@ -102,9 +102,9 @@ lang lang_intersection(lang a,lang b){
 
     for (set<string>::iterator it = a.begin(); it != a.end(); it++){
         if (b.find(*it) != b.end()){
-            if (*it == ""){
-                continue;
-            }
+            // if (*it == ""){
+            //     continue;
+            // }
             l.insert(*it);
         }
     }
